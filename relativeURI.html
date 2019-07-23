@@ -220,7 +220,7 @@ When you link to an item on your own weblog, it would be convenient to use a rel
 <div align="center"><b>Table 1</b></div>
 <table align="center" border="1" cellpadding="4" cellspacing="0">
 <tr><td>relative</td><td>&lt;a href="rss.xml">rss.xml&lt;/a></td></tr>
-<tr><td>fully-qualified</td><td>&lt;a href="http://weblog.infoworld.com/udell/rss.xml"><br>http://weblog.infoworld.com/udell/rss.xml &lt;/a></td></tr>
+<tr><td>fully-qualified</td><td>&lt;a href="https://web.archive.org/web/20040202052733/http://weblog.infoworld.com/udell//rss.xml"><br>https://web.archive.org/web/20040202052733/http://weblog.infoworld.com/udell//rss.xml &lt;/a></td></tr>
 </table>
 <div align="center"><i>relative vs fully-qualifed URIs</i></div>
 <p>
@@ -239,17 +239,17 @@ Figure 1 illustrates a simple RSS 2.0 feed that uses xml:base to specify the bas
 <table align="center" cellspacing="0" cellpadding="4" border="1"><tr><td>
 <pre>
 &lt;?xml version="1.0"?>
-&lt;rss version="2.0" xml:base="http://weblog.infoworld.com/udell">
+&lt;rss version="2.0" xml:base="https://web.archive.org/web/20040202052733/http://weblog.infoworld.com/udell/">
 &lt;channel>
 &lt;title>Jon's Radio&lt;/title>
-&lt;link><a href="http://weblog.infoworld.com/udell/">http://weblog.infoworld.com/udell/</a> &lt;/link>
+&lt;link><a href="https://web.archive.org/web/20040202052733/http://weblog.infoworld.com/udell//">https://web.archive.org/web/20040202052733/http://weblog.infoworld.com/udell//</a> &lt;/link>
 &lt;description>Jon Udell's Radio Blog&lt;/description>
 &lt;item>
 &lt;title>relative URI test&lt;/title>
-&lt;link><a href="http://weblog.infoworld.com/udell/2003/08/04.html#a766">http://weblog.infoworld.com/udell/2003/08/04.html#a766</a> &lt;/link>
+&lt;link><a href="https://web.archive.org/web/20040202052733/http://weblog.infoworld.com/udell//2003/08/04.html#a766">https://web.archive.org/web/20040202052733/http://weblog.infoworld.com/udell//2003/08/04.html#a766</a> &lt;/link>
 &lt;description>
 (&lt;a href="/index.html">relative&lt;/a>, 
-&lt;a href="http://weblog.infoworld.com/udell/index.html">fully-qualified&lt;/a>)
+&lt;a href="https://web.archive.org/web/20040202052733/http://weblog.infoworld.com/udell//index.html">fully-qualified&lt;/a>)
 &lt;/description>
 &lt;/item>
 &lt;/channel>
@@ -261,18 +261,18 @@ Figure 1 illustrates a simple RSS 2.0 feed that uses xml:base to specify the bas
 This feed is currently not considered <a href="http://feeds.archive.org/validator/check?url=http%3A%2F%2Fweblog.infoworld.com%2Fudell%2Fgems%2Ftest2.xml">valid</a>, and that's appropriate. The RSS 2.0 specification is silent on this issue, and RSS readers have not hitherto been advised to support xml:base.
 </p>
 <p>
-Although it is not deemed valid, you can in fact subscribe to the <a href="http://weblog.infoworld.com/udell/gems/test2.xml">test feed</a> shown in Figure 1. Here's how three RSS readers handle the relative and absolute links in the sample:
+Although it is not deemed valid, you can in fact subscribe to the <a href="https://web.archive.org/web/20040202052733/http://weblog.infoworld.com/udell//gems/test2.xml">test feed</a> shown in Figure 1. Here's how three RSS readers handle the relative and absolute links in the sample:
 </p>
 <div align="center"><b>Table 2</b></div>
 <table align="center" border="1" cellpadding="4" cellspacing="0">
 <tr><td></td><td>relative</td><td>absolute</td></tr>
-<tr><td>Radio UserLand</td><td><a href="http://localhost:5335/index.html">http://localhost:5335/index.html</a></td><td><a href="http://weblog.infoworld.com/udell/index.html">http://weblog.infoworld.com/udell/index.html</a></td></tr>
-<tr><td>SharpReader</td><td><a href="http://weblog.infoworld.com/index.html">http://weblog.infoworld.com/index.html</a></td><td><a href="http://weblog.infoworld.com/udell/index.html">http://weblog.infoworld.com/udell/index.html</a></td></tr>
-<tr><td>NetNewsWire</td><td><a href="http://weblog.infoworld.com/udell/index.html">http://weblog.infoworld.com/udell/index.html</a></td><td><a href="http://weblog.infoworld.com/udell/index.html">http://weblog.infoworld.com/udell/index.html</a></td></tr>
+<tr><td>Radio UserLand</td><td><a href="http://localhost:5335/index.html">http://localhost:5335/index.html</a></td><td><a href="https://web.archive.org/web/20040202052733/http://weblog.infoworld.com/udell//index.html">https://web.archive.org/web/20040202052733/http://weblog.infoworld.com/udell//index.html</a></td></tr>
+<tr><td>SharpReader</td><td><a href="http://weblog.infoworld.com/index.html">http://weblog.infoworld.com/index.html</a></td><td><a href="https://web.archive.org/web/20040202052733/http://weblog.infoworld.com/udell//index.html">https://web.archive.org/web/20040202052733/http://weblog.infoworld.com/udell//index.html</a></td></tr>
+<tr><td>NetNewsWire</td><td><a href="https://web.archive.org/web/20040202052733/http://weblog.infoworld.com/udell//index.html">https://web.archive.org/web/20040202052733/http://weblog.infoworld.com/udell//index.html</a></td><td><a href="https://web.archive.org/web/20040202052733/http://weblog.infoworld.com/udell//index.html">https://web.archive.org/web/20040202052733/http://weblog.infoworld.com/udell//index.html</a></td></tr>
 </table>
 <div align="center"><i>How three RSS readers handle xml:base</i></div>
 <p>
-[[[Although there is no requirement to do so, it appears that NetNewsWire implements xml:base as a best practice.]]] Although it appears that NetNewsWire implements xml:base in this example, it doesn't. Instead it uses the top-level link (rss/channel/link) which, in this example, is also <a href="http://weblog.infoworld.com/udell">http://weblog.infoworld.com/udell</a>.
+[[[Although there is no requirement to do so, it appears that NetNewsWire implements xml:base as a best practice.]]] Although it appears that NetNewsWire implements xml:base in this example, it doesn't. Instead it uses the top-level link (rss/channel/link) which, in this example, is also <a href="https://web.archive.org/web/20040202052733/http://weblog.infoworld.com/udell/">https://web.archive.org/web/20040202052733/http://weblog.infoworld.com/udell/</a>.
 </p>
 <p>
 [[[We are inclined to recommend that all RSS readers honor xml:base when present.]]] We are inclined to recommend that RSS readers construe /rss/channel/link as the base by default, and xml:base (if present) as an override (if the base must differ from /rss/channel/link).
