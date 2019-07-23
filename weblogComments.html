@@ -13,18 +13,18 @@
     A {
       text-decoration: none;
       font-weight:bold;
-      } 
+      }
     A:link {
       color: #920011;
       text-decoration: none;
       font-weight:bold;
-      } 
+      }
     A:visited {
       color: #924547; text-decoration: none;
-      } 
+      }
     A:active {
       color: #920011;
-      } 
+      }
     A:hover {
       color: #FFF;
       background:#920011;
@@ -49,11 +49,11 @@
       font-family:arial, sans-serif;
       color:#924547;
       font-size:14px;
-      font-weight:bold; 
-      text-transform:none;    
-      padding-bottom:25px; 
-      margin-bottom:15px; 
-      }      
+      font-weight:bold;
+      text-transform:none;
+      padding-bottom:25px;
+      margin-bottom:15px;
+      }
   /* Main Column--------------------------------------------- */
     .blogbody {
       font-family: Verdana, Lucida, Geneva, Helvetica, Arial, sans-serif;
@@ -62,24 +62,24 @@
       line-height:150%;
       font-weight:normal;
       background:#FFF;
-      }  
-    .title  { 
-      font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Lucida, Geneva, Helvetica, Arial; 
-      font-size: 150%; 
+      }
+    .title  {
+      font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Lucida, Geneva, Helvetica, Arial;
+      font-size: 150%;
       line-height:150%;
-      font-weight:bold; 
+      font-weight:bold;
       text-align:left;
-      color: #000; 
+      color: #000;
       padding-bottom:15px;
-      }  
+      }
     .footer{
       color:#333;
       font-family: Arial, sans-serif;
       font-size:11px;
       line-height:130%;
       font-weight:normal;
-      padding-top:10px; 
-      margin-top:26px; 
+      padding-top:10px;
+      margin-top:26px;
       border-top:1px solid #000;
       }
   /* NewsItems--------------------------------------------- */
@@ -89,15 +89,15 @@
       line-height:100%;
       color:#000;
       font-weight:bold;
-      padding-top:0px;    
-      padding-bottom:0px;    
-      padding-left:10px;    
-      padding-right:10px;    
+      padding-top:0px;
+      padding-bottom:0px;
+      padding-left:10px;
+      padding-right:10px;
       text-align:left;
       background:#FFF;
       background-position: top left;
       background-repeat: repeat-y;
-      } 
+      }
     .newsItemDesc {
       font-family:'Trebuchet MS', 'Lucida Grande', Verdana, Lucida, Geneva, Helvetica, Arial;
       font-weight:normal;
@@ -154,7 +154,7 @@
       color:#FFF;
       }
     .hCalendarMonthYearRow, .dCalendarMonthYearRow
-      { 
+      {
       font-family:arial, sans-serif;
       color:#FFF;
       font-size:12px;
@@ -171,7 +171,7 @@
       line-height:100%;
       font-weight:bold;
       text-align:center;
-      padding:0px;   
+      padding:0px;
       }
     .hCalendarDayRow, .dCalendarDayRow
       {
@@ -181,7 +181,7 @@
       line-height:100%;
       font-weight:normal;
       text-align:center;
-      padding:0px;    
+      padding:0px;
       }
     .hCalendarDayLinked, .dCalendarDayLinked
       {
@@ -192,7 +192,7 @@
       line-height:100%;
       font-weight:normal;
       text-align:center;
-      padding:0px;   
+      padding:0px;
       }
     .hCalendarDayCurrent, .dCalendarDayCurrent
       {
@@ -203,7 +203,7 @@
       line-height:100%;
       font-weight:normal;
       text-align:center;
-      padding:0px;   
+      padding:0px;
       }
   </style>
 		</head>
@@ -219,8 +219,8 @@
 	Content tools and aggregators can support this feature, allowing people to comment on an item directly from the news aggregator window.<br><br>
 	This document is a case study that shows how UserLand's weblog tool and aggregator both support comments. By illustrating this, I'm hoping that other tools and aggregators will also use this feature of RSS.<br><br>
 <b>Walkthrough<a name="walkthrough">&nbsp;</a><a href="#walkthrough" title="Permanent link to 'Walkthrough' in archive."><img src="images/leftArrow.gif" height="9" width="11" border="0"></a></b><br><br>
-	Don Park is a friendly guy and I imagine he won't mind if I use his <a href="http://www.docuverse.com/blog/donpark/">weblog</a> as an example.<br><br>
-	Look at his RSS <a href="http://www.docuverse.com/blog/donpark/rss.xml">feed</a>, and look at any <item>, and you'll see a &lt;comments> element. Its value is the URL of the comments page for the <item>. Radio knows that it should include the comments element because Don has comments <a href="http://127.0.0.1:5335/system/pages/prefs?page=2.12">turned on</a>. If the feature was turned off, the weblog tool would not generate the comments element.<br><br>
+	Don Park is a friendly guy and I imagine he won't mind if I use his <a href="https://web.archive.org/web/20030603202930/http://www.docuverse.com/blog/donpark/">weblog</a> as an example.<br><br>
+	Look at his RSS <a href="https://web.archive.org/web/20030412021443/http://www.docuverse.com/blog/donpark/rss.xml">feed</a>, and look at any <item>, and you'll see a &lt;comments> element. Its value is the URL of the comments page for the <item>. Radio knows that it should include the comments element because Don has comments <a href="http://127.0.0.1:5335/system/pages/prefs?page=2.12">turned on</a>. If the feature was turned off, the weblog tool would not generate the comments element.<br><br>
 	I subscribe to Don's feed. When I see one of his items, in the rightmost column, just below the <font size="-1">POST</font> icon is a <a href="images/pencil.gif">picture</a> of a pencil. When I click on the pencil, Radio opens a little <a href="images/smallCommentWindow.gif">window</a> containing the comments for that item, and it's ready for me to enter my own comments. Here's a <a href="images/commentScreen.gif">screen shot</a> that shows what the aggregator window looks like.<br><br>
 <b>Summary<a name="summary">&nbsp;</a><a href="#summary" title="Permanent link to 'Summary' in archive."><img src="images/leftArrow.gif" height="9" width="11" border="0"></a></b><br><br>
 	If you make a weblog tool that supports comments, your RSS feed should also support <comments>.<br><br>

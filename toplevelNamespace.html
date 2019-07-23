@@ -13,18 +13,18 @@
     A {
       text-decoration: none;
       font-weight:bold;
-      } 
+      }
     A:link {
       color: #920011;
       text-decoration: none;
       font-weight:bold;
-      } 
+      }
     A:visited {
       color: #924547; text-decoration: none;
-      } 
+      }
     A:active {
       color: #920011;
-      } 
+      }
     A:hover {
       color: #FFF;
       background:#920011;
@@ -49,11 +49,11 @@
       font-family:arial, sans-serif;
       color:#924547;
       font-size:14px;
-      font-weight:bold; 
-      text-transform:none;    
-      padding-bottom:25px; 
-      margin-bottom:15px; 
-      }      
+      font-weight:bold;
+      text-transform:none;
+      padding-bottom:25px;
+      margin-bottom:15px;
+      }
   /* Main Column--------------------------------------------- */
     .blogbody {
       font-family: Verdana, Lucida, Geneva, Helvetica, Arial, sans-serif;
@@ -62,24 +62,24 @@
       line-height:150%;
       font-weight:normal;
       background:#FFF;
-      }  
-    .title  { 
-      font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Lucida, Geneva, Helvetica, Arial; 
-      font-size: 150%; 
+      }
+    .title  {
+      font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Lucida, Geneva, Helvetica, Arial;
+      font-size: 150%;
       line-height:150%;
-      font-weight:bold; 
+      font-weight:bold;
       text-align:left;
-      color: #000; 
+      color: #000;
       padding-bottom:15px;
-      }  
+      }
     .footer{
       color:#333;
       font-family: Arial, sans-serif;
       font-size:11px;
       line-height:130%;
       font-weight:normal;
-      padding-top:10px; 
-      margin-top:26px; 
+      padding-top:10px;
+      margin-top:26px;
       border-top:1px solid #000;
       }
   /* NewsItems--------------------------------------------- */
@@ -89,15 +89,15 @@
       line-height:100%;
       color:#000;
       font-weight:bold;
-      padding-top:0px;    
-      padding-bottom:0px;    
-      padding-left:10px;    
-      padding-right:10px;    
+      padding-top:0px;
+      padding-bottom:0px;
+      padding-left:10px;
+      padding-right:10px;
       text-align:left;
       background:#FFF;
       background-position: top left;
       background-repeat: repeat-y;
-      } 
+      }
     .newsItemDesc {
       font-family:'Trebuchet MS', 'Lucida Grande', Verdana, Lucida, Geneva, Helvetica, Arial;
       font-weight:normal;
@@ -154,7 +154,7 @@
       color:#FFF;
       }
     .hCalendarMonthYearRow, .dCalendarMonthYearRow
-      { 
+      {
       font-family:arial, sans-serif;
       color:#FFF;
       font-size:12px;
@@ -171,7 +171,7 @@
       line-height:100%;
       font-weight:bold;
       text-align:center;
-      padding:0px;   
+      padding:0px;
       }
     .hCalendarDayRow, .dCalendarDayRow
       {
@@ -181,7 +181,7 @@
       line-height:100%;
       font-weight:normal;
       text-align:center;
-      padding:0px;    
+      padding:0px;
       }
     .hCalendarDayLinked, .dCalendarDayLinked
       {
@@ -192,7 +192,7 @@
       line-height:100%;
       font-weight:normal;
       text-align:center;
-      padding:0px;   
+      padding:0px;
       }
     .hCalendarDayCurrent, .dCalendarDayCurrent
       {
@@ -203,7 +203,7 @@
       line-height:100%;
       font-weight:normal;
       text-align:center;
-      padding:0px;   
+      padding:0px;
       }
   </style>
 		</head>
@@ -213,7 +213,7 @@
 				<td width="70%" valign="top" class="blogbody" bgcolor="#FFFFFF">
 					<div id="banner"><a href="index.html">RSS 2.0 at Harvard Law</a></div><div class="tagline">Internet technology hosted by Berkman Center</div>
 					<h2>Top-level namespaces</h2>
-					
+
 					<p>
 An RSS 2.0 feed's top-level element -- its &lt;rss> tag -- does not belong to any URI-identified namespace. (Technically, it belongs to the "empty namespace.") However, elements contained at any level within an RSS 2.0 feed can belong to other namespaces. That's the mechanism for extending RSS 2.0's core vocabulary.
 </p>
@@ -224,7 +224,7 @@ There are really two different issues with respect to RSS and namespaces: a) mod
 What RSS 2.0 feeds can't do, lacking a top-level namespace declaration, is embed directly in other XML vocabularies. For that scenario to work, RSS 2.0's top-level namespace would have to be non-empty.
 </p>
 <p>
-What happens if you simply assign an RSS 2.0 feed to a namespace? As it turns out, many (but not all) existing aggregators won't be affected by that change.<sup>1</sup> That sounds like good news, but really it isn't. It's true only because those aggregators aren't strictly observing the rules of XML. 
+What happens if you simply assign an RSS 2.0 feed to a namespace? As it turns out, many (but not all) existing aggregators won't be affected by that change.<sup>1</sup> That sounds like good news, but really it isn't. It's true only because those aggregators aren't strictly observing the rules of XML.
 </p>
 <p>
 What to do? Here are some choices:
@@ -232,7 +232,7 @@ What to do? Here are some choices:
 <ol>
 <li>
 <p>
-RSS 2.0 producers -- and later, consumers -- could switch to use of a defined top-level namepace. This would be a major discontinuity. 
+RSS 2.0 producers -- and later, consumers -- could switch to use of a defined top-level namepace. This would be a major discontinuity.
 </p>
 </li>
 <li>
@@ -242,7 +242,7 @@ Applications wishing to embed RSS 2.0 payloads could modify them, in effect wrap
 </li>
 <li>
 <p>
-Aggregators could look for a defined RSS 2.0 namespace, and parse accordingly if it were found, but fall back to the empty namespace otherwise. This could enable existing RSS 2.0 feeds to gradual migrate in the direction of embeddability. 
+Aggregators could look for a defined RSS 2.0 namespace, and parse accordingly if it were found, but fall back to the empty namespace otherwise. This could enable existing RSS 2.0 feeds to gradual migrate in the direction of embeddability.
 </p>
 </li>
 </ol>
@@ -253,7 +253,7 @@ We are inclined to recommend the third approach, but will continue to research t
 
 <hr>
 <p>
-<sup>1</sup> The <a href="http://feeds.archive.org/validator">RSS validator</a> does not currently complain when an RSS 2.0 feed declares itself to be in a non-empty namespace. However, it does complain -- correctly -- when elements within the feed declare themselves as belonging to the empty namespace.
+<sup>1</sup> The <a href="https://web.archive.org/web/20030801082250/http://feeds.archive.org/validator/">RSS validator</a> does not currently complain when an RSS 2.0 feed declares itself to be in a non-empty namespace. However, it does complain -- correctly -- when elements within the feed declare themselves as belonging to the empty namespace.
 </p>
 
 					<div class="footer">

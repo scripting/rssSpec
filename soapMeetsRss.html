@@ -13,18 +13,18 @@
     A {
       text-decoration: none;
       font-weight:bold;
-      } 
+      }
     A:link {
       color: #920011;
       text-decoration: none;
       font-weight:bold;
-      } 
+      }
     A:visited {
       color: #924547; text-decoration: none;
-      } 
+      }
     A:active {
       color: #920011;
-      } 
+      }
     A:hover {
       color: #FFF;
       background:#920011;
@@ -49,11 +49,11 @@
       font-family:arial, sans-serif;
       color:#924547;
       font-size:14px;
-      font-weight:bold; 
-      text-transform:none;    
-      padding-bottom:25px; 
-      margin-bottom:15px; 
-      }      
+      font-weight:bold;
+      text-transform:none;
+      padding-bottom:25px;
+      margin-bottom:15px;
+      }
   /* Main Column--------------------------------------------- */
     .blogbody {
       font-family: Verdana, Lucida, Geneva, Helvetica, Arial, sans-serif;
@@ -62,24 +62,24 @@
       line-height:150%;
       font-weight:normal;
       background:#FFF;
-      }  
-    .title  { 
-      font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Lucida, Geneva, Helvetica, Arial; 
-      font-size: 150%; 
+      }
+    .title  {
+      font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Lucida, Geneva, Helvetica, Arial;
+      font-size: 150%;
       line-height:150%;
-      font-weight:bold; 
+      font-weight:bold;
       text-align:left;
-      color: #000; 
+      color: #000;
       padding-bottom:15px;
-      }  
+      }
     .footer{
       color:#333;
       font-family: Arial, sans-serif;
       font-size:11px;
       line-height:130%;
       font-weight:normal;
-      padding-top:10px; 
-      margin-top:26px; 
+      padding-top:10px;
+      margin-top:26px;
       border-top:1px solid #000;
       }
   /* NewsItems--------------------------------------------- */
@@ -89,15 +89,15 @@
       line-height:100%;
       color:#000;
       font-weight:bold;
-      padding-top:0px;    
-      padding-bottom:0px;    
-      padding-left:10px;    
-      padding-right:10px;    
+      padding-top:0px;
+      padding-bottom:0px;
+      padding-left:10px;
+      padding-right:10px;
       text-align:left;
       background:#FFF;
       background-position: top left;
       background-repeat: repeat-y;
-      } 
+      }
     .newsItemDesc {
       font-family:'Trebuchet MS', 'Lucida Grande', Verdana, Lucida, Geneva, Helvetica, Arial;
       font-weight:normal;
@@ -154,7 +154,7 @@
       color:#FFF;
       }
     .hCalendarMonthYearRow, .dCalendarMonthYearRow
-      { 
+      {
       font-family:arial, sans-serif;
       color:#FFF;
       font-size:12px;
@@ -171,7 +171,7 @@
       line-height:100%;
       font-weight:bold;
       text-align:center;
-      padding:0px;   
+      padding:0px;
       }
     .hCalendarDayRow, .dCalendarDayRow
       {
@@ -181,7 +181,7 @@
       line-height:100%;
       font-weight:normal;
       text-align:center;
-      padding:0px;    
+      padding:0px;
       }
     .hCalendarDayLinked, .dCalendarDayLinked
       {
@@ -192,7 +192,7 @@
       line-height:100%;
       font-weight:normal;
       text-align:center;
-      padding:0px;   
+      padding:0px;
       }
     .hCalendarDayCurrent, .dCalendarDayCurrent
       {
@@ -203,7 +203,7 @@
       line-height:100%;
       font-weight:normal;
       text-align:center;
-      padding:0px;   
+      padding:0px;
       }
   </style>
 		</head>
@@ -215,12 +215,12 @@
 					<h2>SOAP Meets RSS</h2>
 					<p><i>Thursday, July 17, 2003</i></p>
 					<b>Publish and subscribe<a name="publishAndSubscribe">&nbsp;</a><a href="#publishAndSubscribe" title="Permanent link to 'Publish and subscribe' in archive."><img src="images/leftArrow.gif" height="9" width="11" border="0"></a></b><br><br>
-	Most aggregators scan for changes once an hour, but in some situations we want to know immediately when a channel has changed. For example, we include <a href="http://macros.userland.com/basic/viewRssBox">RSS Boxes</a> on many of our sites. When an editor routes a item to a box, we want the news to be displayed immediately, but we don't want to read the RSS channel on every hit. Notification makes it possible to always be current yet conserve bandwidth and server cycles.<br><br>
+	Most aggregators scan for changes once an hour, but in some situations we want to know immediately when a channel has changed. For example, we include <a href="https://web.archive.org/web/20010302134837/http://macros.userland.com/basic/viewRssBox">RSS Boxes</a> on many of our sites. When an editor routes a item to a box, we want the news to be displayed immediately, but we don't want to read the RSS channel on every hit. Notification makes it possible to always be current yet conserve bandwidth and server cycles.<br><br>
 <b>A new feature for RSS<a name="aNewFeatureForRss">&nbsp;</a><a href="#aNewFeatureForRss" title="Permanent link to 'A new feature for RSS' in archive."><img src="images/leftArrow.gif" height="9" width="11" border="0"></a></b><br><br>
 	There's a new &lt;cloud> sub-element of &lt;channel>. It specifies a Web application that supports the rssCloud interface, described below, which can be implemented in either XML-RPC or SOAP. <br><br>
 	A <cloud> has five required attributes: domain is the domain name or IP address of the cloud, port is the TCP port that the cloud is running on, path is the location of its responder, registerProcedure is the name of the procedure to call to request notification, and protocol is xml-rpc, soap or http-post (case-sensitive), indicating which protocol is to be used.<br><br>
 <b>Example<a name="example">&nbsp;</a><a href="#example" title="Permanent link to 'Example' in archive."><img src="images/leftArrow.gif" height="9" width="11" border="0"></a></b><br><br>
-	Here's an <a href="http://radio.weblogs.com/0001015/rss.xml">example</a> of a RSS file that includes the new <cloud> element.<br><br>
+	Here's an <a href="https://web.archive.org/web/20040607125801/http://radio.weblogs.com/0001015/rss.xml">example</a> of a RSS file that includes the new <cloud> element.<br><br>
 	<code>&lt;cloud domain="radio.xmlstoragesystem.com" port="80" path="/RPC2" registerProcedure="xmlStorageSystem.rssPleaseNotify" protocol="xml-rpc" /></code><br><br>
 	This is telling the aggregator to send an XML-RPC message to radio.xmlstoragesystem.com on port 80, with path /RPC2 to the procedure named xmlStorageSystem.rssPleaseNotify to request notification.<br><br>
 	Most RSS files produced by Radio UserLand have a <cloud> element.<br><br>
