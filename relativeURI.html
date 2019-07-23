@@ -13,18 +13,18 @@
     A {
       text-decoration: none;
       font-weight:bold;
-      } 
+      }
     A:link {
       color: #920011;
       text-decoration: none;
       font-weight:bold;
-      } 
+      }
     A:visited {
       color: #924547; text-decoration: none;
-      } 
+      }
     A:active {
       color: #920011;
-      } 
+      }
     A:hover {
       color: #FFF;
       background:#920011;
@@ -49,11 +49,11 @@
       font-family:arial, sans-serif;
       color:#924547;
       font-size:14px;
-      font-weight:bold; 
-      text-transform:none;    
-      padding-bottom:25px; 
-      margin-bottom:15px; 
-      }      
+      font-weight:bold;
+      text-transform:none;
+      padding-bottom:25px;
+      margin-bottom:15px;
+      }
   /* Main Column--------------------------------------------- */
     .blogbody {
       font-family: Verdana, Lucida, Geneva, Helvetica, Arial, sans-serif;
@@ -62,24 +62,24 @@
       line-height:150%;
       font-weight:normal;
       background:#FFF;
-      }  
-    .title  { 
-      font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Lucida, Geneva, Helvetica, Arial; 
-      font-size: 150%; 
+      }
+    .title  {
+      font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Lucida, Geneva, Helvetica, Arial;
+      font-size: 150%;
       line-height:150%;
-      font-weight:bold; 
+      font-weight:bold;
       text-align:left;
-      color: #000; 
+      color: #000;
       padding-bottom:15px;
-      }  
+      }
     .footer{
       color:#333;
       font-family: Arial, sans-serif;
       font-size:11px;
       line-height:130%;
       font-weight:normal;
-      padding-top:10px; 
-      margin-top:26px; 
+      padding-top:10px;
+      margin-top:26px;
       border-top:1px solid #000;
       }
   /* NewsItems--------------------------------------------- */
@@ -89,15 +89,15 @@
       line-height:100%;
       color:#000;
       font-weight:bold;
-      padding-top:0px;    
-      padding-bottom:0px;    
-      padding-left:10px;    
-      padding-right:10px;    
+      padding-top:0px;
+      padding-bottom:0px;
+      padding-left:10px;
+      padding-right:10px;
       text-align:left;
       background:#FFF;
       background-position: top left;
       background-repeat: repeat-y;
-      } 
+      }
     .newsItemDesc {
       font-family:'Trebuchet MS', 'Lucida Grande', Verdana, Lucida, Geneva, Helvetica, Arial;
       font-weight:normal;
@@ -154,7 +154,7 @@
       color:#FFF;
       }
     .hCalendarMonthYearRow, .dCalendarMonthYearRow
-      { 
+      {
       font-family:arial, sans-serif;
       color:#FFF;
       font-size:12px;
@@ -171,7 +171,7 @@
       line-height:100%;
       font-weight:bold;
       text-align:center;
-      padding:0px;   
+      padding:0px;
       }
     .hCalendarDayRow, .dCalendarDayRow
       {
@@ -181,7 +181,7 @@
       line-height:100%;
       font-weight:normal;
       text-align:center;
-      padding:0px;    
+      padding:0px;
       }
     .hCalendarDayLinked, .dCalendarDayLinked
       {
@@ -192,7 +192,7 @@
       line-height:100%;
       font-weight:normal;
       text-align:center;
-      padding:0px;   
+      padding:0px;
       }
     .hCalendarDayCurrent, .dCalendarDayCurrent
       {
@@ -203,7 +203,7 @@
       line-height:100%;
       font-weight:normal;
       text-align:center;
-      padding:0px;   
+      padding:0px;
       }
   </style>
 		</head>
@@ -213,7 +213,7 @@
 				<td width="70%" valign="top" class="blogbody" bgcolor="#FFFFFF">
 					<div id="banner"><a href="index.html">RSS 2.0 at Harvard Law</a></div><div class="tagline">Internet technology hosted by Berkman Center</div>
 					<h2>Relative links</h2>
-					
+
 					<p>
 When you link to an item on your own weblog, it would be convenient to use a relative rather absolute URL. For example:
 </p>
@@ -233,7 +233,7 @@ This document describes a mechanism for providing base URI services to XLink, bu
 </i></blockquote>
 </p>
 <p>
-Figure 1 illustrates a simple RSS 2.0 feed that uses xml:base to specify the base URI for relative links. 
+Figure 1 illustrates a simple RSS 2.0 feed that uses xml:base to specify the base URI for relative links.
 </p>
 <div align="center"><b>Figure 1</b></div>
 <table align="center" cellspacing="0" cellpadding="4" border="1"><tr><td>
@@ -242,13 +242,13 @@ Figure 1 illustrates a simple RSS 2.0 feed that uses xml:base to specify the bas
 &lt;rss version="2.0" xml:base="http://weblog.infoworld.com/udell">
 &lt;channel>
 &lt;title>Jon's Radio&lt;/title>
-&lt;link><a href="http://weblog.infoworld.com/udell/">http://weblog.infoworld.com/udell/</a> &lt;/link>
+&lt;link><a href="https://web.archive.org/web/20040202052733/http://weblog.infoworld.com/udell/">http://weblog.infoworld.com/udell/</a> &lt;/link>
 &lt;description>Jon Udell's Radio Blog&lt;/description>
 &lt;item>
 &lt;title>relative URI test&lt;/title>
 &lt;link><a href="http://weblog.infoworld.com/udell/2003/08/04.html#a766">http://weblog.infoworld.com/udell/2003/08/04.html#a766</a> &lt;/link>
 &lt;description>
-(&lt;a href="/index.html">relative&lt;/a>, 
+(&lt;a href="/index.html">relative&lt;/a>,
 &lt;a href="http://weblog.infoworld.com/udell/index.html">fully-qualified&lt;/a>)
 &lt;/description>
 &lt;/item>
