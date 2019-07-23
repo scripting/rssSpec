@@ -13,18 +13,18 @@
     A {
       text-decoration: none;
       font-weight:bold;
-      } 
+      }
     A:link {
       color: #920011;
       text-decoration: none;
       font-weight:bold;
-      } 
+      }
     A:visited {
       color: #924547; text-decoration: none;
-      } 
+      }
     A:active {
       color: #920011;
-      } 
+      }
     A:hover {
       color: #FFF;
       background:#920011;
@@ -49,11 +49,11 @@
       font-family:arial, sans-serif;
       color:#924547;
       font-size:14px;
-      font-weight:bold; 
-      text-transform:none;    
-      padding-bottom:25px; 
-      margin-bottom:15px; 
-      }      
+      font-weight:bold;
+      text-transform:none;
+      padding-bottom:25px;
+      margin-bottom:15px;
+      }
   /* Main Column--------------------------------------------- */
     .blogbody {
       font-family: Verdana, Lucida, Geneva, Helvetica, Arial, sans-serif;
@@ -62,24 +62,24 @@
       line-height:150%;
       font-weight:normal;
       background:#FFF;
-      }  
-    .title  { 
-      font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Lucida, Geneva, Helvetica, Arial; 
-      font-size: 150%; 
+      }
+    .title  {
+      font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Lucida, Geneva, Helvetica, Arial;
+      font-size: 150%;
       line-height:150%;
-      font-weight:bold; 
+      font-weight:bold;
       text-align:left;
-      color: #000; 
+      color: #000;
       padding-bottom:15px;
-      }  
+      }
     .footer{
       color:#333;
       font-family: Arial, sans-serif;
       font-size:11px;
       line-height:130%;
       font-weight:normal;
-      padding-top:10px; 
-      margin-top:26px; 
+      padding-top:10px;
+      margin-top:26px;
       border-top:1px solid #000;
       }
   /* NewsItems--------------------------------------------- */
@@ -89,15 +89,15 @@
       line-height:100%;
       color:#000;
       font-weight:bold;
-      padding-top:0px;    
-      padding-bottom:0px;    
-      padding-left:10px;    
-      padding-right:10px;    
+      padding-top:0px;
+      padding-bottom:0px;
+      padding-left:10px;
+      padding-right:10px;
       text-align:left;
       background:#FFF;
       background-position: top left;
       background-repeat: repeat-y;
-      } 
+      }
     .newsItemDesc {
       font-family:'Trebuchet MS', 'Lucida Grande', Verdana, Lucida, Geneva, Helvetica, Arial;
       font-weight:normal;
@@ -154,7 +154,7 @@
       color:#FFF;
       }
     .hCalendarMonthYearRow, .dCalendarMonthYearRow
-      { 
+      {
       font-family:arial, sans-serif;
       color:#FFF;
       font-size:12px;
@@ -171,7 +171,7 @@
       line-height:100%;
       font-weight:bold;
       text-align:center;
-      padding:0px;   
+      padding:0px;
       }
     .hCalendarDayRow, .dCalendarDayRow
       {
@@ -181,7 +181,7 @@
       line-height:100%;
       font-weight:normal;
       text-align:center;
-      padding:0px;    
+      padding:0px;
       }
     .hCalendarDayLinked, .dCalendarDayLinked
       {
@@ -192,7 +192,7 @@
       line-height:100%;
       font-weight:normal;
       text-align:center;
-      padding:0px;   
+      padding:0px;
       }
     .hCalendarDayCurrent, .dCalendarDayCurrent
       {
@@ -203,7 +203,7 @@
       line-height:100%;
       font-weight:normal;
       text-align:center;
-      padding:0px;   
+      padding:0px;
       }
   </style>
 		</head>
@@ -219,9 +219,9 @@
 	Like the enclosure of an email message, an RSS item enclosure is something big that may take a long time to download, or something binary that isn't text you read. You can read the text that describes the enclosure, or the enclosure may somehow be related to the item.<br><br>
 	An example. Suppose a news source, like the NY Times runs a movie review. It might make sense to enclose a trailer for the movie along with the review. Or a band might use RSS to keep their fans informed of what they're up to. An enclosure could include a bit of music to illustrate a point.<br><br>
 	The cool thing about enclosures is that they can be time-shifted. The aggregator or news readers should not download the enclosure until the computer is idle, and should not present the item with the enclosure to the user until the enclosure has been downloaded and is resident on the local hard disk. The key premise is No More Click-Wait. <br><br>
-	Please read the <a href="payloadsforrss.html">background piece</a> for more on the philosophy of enclosures. This article is a walkthrough for developers showing them how to support this feature of RSS.<br><br>
+	Please read the <a href="payloadsForRss.html">background piece</a> for more on the philosophy of enclosures. This article is a walkthrough for developers showing them how to support this feature of RSS.<br><br>
 <b>Walkthrough<a name="walkthrough">&nbsp;</a><a href="#walkthrough" title="Permanent link to 'Walkthrough' in archive."><img src="images/leftArrow.gif" height="9" width="11" border="0"></a></b><br><br>
-	<a href="http://live.curry.com/">Adam Curry</a> is a television personality with several weblogs and his own reality show called Adam's Family. He was also one of the first video jocks on MTV in the 1980s. He was the guy with the fantastic <a href="http://verbosity.wiw.org/issue4/images/adamc2.gif">hair</a>, and great sense of humor. <br><br>
+	<a href="https://web.archive.org/web/20040707085350/http://live.curry.com/">Adam Curry</a> is a television personality with several weblogs and his own reality show called Adam's Family. He was also one of the first video jocks on MTV in the 1980s. He was the guy with the fantastic <a href="http://verbosity.wiw.org/issue4/images/adamc2.gif">hair</a>, and great sense of humor. <br><br>
 	Adam uses a weblog tool that allows him to include an enclosure on any item. To do so, he enters the item as he normally would, perhaps giving it a title and a link, routing it to one or more categories, and then enters the URL for an enclosure. <a href="images/encscreen1.gif">Screen shot</a>.<br><br>
 	As his weblog tool generates the RSS <a href="examples/rssEnclosuresExample.xml">feed</a> for his site, it reads the header for the enclosed file to determine its size, and looks up its content type in a table (based on the extension) and creates an &lt;enclosure> sub-element of the &lt;item>. If there's an error (e.g. the file doesn't exist, or there was no content-length header), the error is logged and the enclosure element is omitted from the feed.<br><br>
 	Now, on the receiving end, I have subscribed to Adam's feed in my news aggregator. In its hourly scan, the aggregator notes that there's a new item that has an enclosure. It adds the information about the enclosure to a table it's keeping, of enclosures that have not yet been downloaded.<br><br>
